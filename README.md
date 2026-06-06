@@ -3,7 +3,7 @@
 
 > **Algorithmic volume indexing and automated batch memecoin distributions on Solana.**
 
-Hold `$PUMP`, receive direct payouts in high-momentum assets. No staking required. PumpFund is a decentralized, automated ETF that passively harvests the hottest coins on Pump.fun. Every 10 minutes, pool fees are auto-swapped via Jupiter into a dynamically scored trending token and airdropped straight to holders' wallets.
+Hold `$PUMPFUND`, receive direct payouts in high-momentum assets. No staking required. PumpFund is a decentralized, automated ETF that passively harvests the hottest coins on Pump.fun. Every 10 minutes, pool fees are auto-swapped via Jupiter into a dynamically scored trending token and airdropped straight to holders' wallets.
 
 ---
 
@@ -26,10 +26,10 @@ Every 20 seconds, the Python keeper isolates the absolute best target using a pr
 
 The PumpFund engine operates on an automated 4-step perpetual loop:
 
-1. **ACCUMULATE (Fees Pile Up):** Buy and hold `$PUMP`. The Meteora pool automatically accumulates a 5% LP trading fee in wSOL with every buy and sell.
+1. **ACCUMULATE (Fees Pile Up):** Buy and hold `$PUMPFUND`. The Meteora pool automatically accumulates a 5% LP trading fee in wSOL with every buy and sell.
 2. **SCAN (Algorithmic Indexing):** The keeper script continuously aggregates active Pump.fun contracts via multiple aggregators and enriches them via DexScreener, running them through the Trending Algorithm to rank the market in real-time.
 3. **SWEEP (Jupiter Routing):** When the 10-minute countdown hits zero, the dispatcher claims the accrued wSOL fees and swaps 100% of it into the isolated #1 ranked token via Jupiter.
-4. **DROP (Automatic Airdrop):** An on-chain snapshot triggers instantly. The acquired tokens are distributed directly to `$PUMP` holders proportionally based on their holding weight. No manual claims, zero effort.
+4. **DROP (Automatic Airdrop):** An on-chain snapshot triggers instantly. The acquired tokens are distributed directly to `$PUMPFUND` holders proportionally based on their holding weight. No manual claims, zero effort.
 
 ---
 
@@ -142,7 +142,3 @@ python dispatcher.py
 ## ⚠️ Disclaimer
 
 Not financial advice. Single-token distributions are decided programmatically from the top trending token at the time of execution. All cycles are settled on-chain.
-
-```
-
-```
